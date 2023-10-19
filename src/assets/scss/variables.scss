@@ -1,0 +1,93 @@
+/* Colors*/
+$primary: #066839;
+$secondary: #8cc63f;
+$white: #ffffff;
+$black: #000000;
+$toem-grey: #33333380;
+$toem-black: #333333;
+$toem-green: #79c83b;
+$toem-dark-green: #67b004;
+$toem-light-green: #ebffcf;
+$toem-orange: #f29339;
+$toem-yellow: #eeb43f;
+$toem-bg-grey: #fafafa;
+$toem-red: #ff3c3c;
+$toem-hover-green: #b1dc77;
+$toem-dropdown-active: #dcdcdc;
+$toem-blue: #0a6dc2;
+$toem-notification-grey: #d2d2d2;
+$toem-nav-active-bg: #414141;
+$toem-light-gray: #dee2e6;
+$toem-notification-orange: #f18b26;
+$toem-notification-light-green: #def6be;
+$toem-radio-disable: #d9d9d9;
+$toem-border-grey: #e5e5e5;
+
+$borderColor: rgba(6, 104, 57, 0.2);
+$boxShadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$errorColor: rgb(220, 20, 60);
+$warningColor: #ffcc00;
+$warningBackground: rgba(255, 204, 0, 0.3);
+$primaryBackground: rgba(6, 104, 57, 0.3);
+$errorBackground: rgba(220, 20, 60, 0.3);
+$btn-grey: #707070;
+$btn-orange: #fda146;
+
+/* Fonts */
+$fontFamily: "OpenSans";
+$boldFont: "OpenSansBold";
+$semiBoldFont: "OpenSansSemiBold";
+$bolderFont: "OpenSansBolder";
+
+/* Border Radius */
+$borderRadius4: 4px;
+$borderRadius12: 12px;
+$borderRadius8: 8px;
+$borderRadius50: 50px;
+
+/* Paddings */
+$loginScreenPadding: 60px;
+$mainLayoutMarginTopLeft: 30px;
+$mainLayoutMarginTopRight: 20px;
+$mainLayoutMarginBottomRight: 40px;
+
+$badge-error: #c7000b;
+$badge-red: #c7000b;
+$badge-red-background: #ffdfd8;
+$badge-gray: #333;
+$badge-gray-background: #d0d9dd;
+$badge-green: #079024;
+$badge-green-background: #d3efe4;
+$badge-blue: #006da7;
+$badge-blue-background: #00a6ff2b;
+$badge-orange: #ff9000;
+$badge-orange-background: #ff900040;
+$badge-purple: #403294;
+$badge-purple-background: #d2caff;
+$badge-light-green: #005e49;
+$badge-light-green-background: #b2ffd7;
+$badge-yellow: #f59300;
+$badge-yellow-background: #ffefb6;
+$background-light: #f5f5f5;
+$bagdge-orange-dark-bg: #f3a638;
+$badge-green-dark-bg: #50d644;
+$badge-red-dark-bg: #e3503e;
+
+$badge-pending-background: #dfe1e6;
+$badge-pending-text: #333333;
+$badge-verifying-payment-background: #d3e2ff;
+$badge-verifying-payment-text: #6599ff;
+$badge-awaiting-approval-background: #9affed;
+$badge-awaiting-approval-text: #0390a4;
+$badge-onhold-background: #ffc6ad;
+$badge-onhold-text: #ee7200;
+$badge-approved-background: #d5f5c5;
+$badge-approved-text: #2a8333;
+$badge-shipped-background: #d2caff;
+$badge-shipped-text: #403294;
+$badge-delivered-background: #b2ffd7;
+$badge-delivered-text: #005e49;
+$badge-cancelled-background: #ffb5ac;
+$badge-cancelled-text: #ff3c3c;
+$badge-order-closed-background: #ffefb6;
+$badge-order-closed-text: #f59300;

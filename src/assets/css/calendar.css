@@ -1,0 +1,66 @@
+.react-google-flight-datepicker .date-picker-input {
+  height: 44px;
+}
+
+.react-google-flight-datepicker .date {
+  padding: 0px 5px;
+}
+
+.react-google-flight-datepicker .date-picker {
+  padding: 0px;
+}
+
+.react-google-flight-datepicker .selected-date {
+  font-size: 14px !important;
+}
+
+.react-google-flight-datepicker .change-date-group {
+  display: none !important;
+}
+
+.react-google-flight-datepicker .icon-calendar {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.react-google-flight-datepicker .date-picker-input svg {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.toem-date-picker .dialog-footer {
+  display: none;
+}
+
+.date-slabs .icon-calendar {
+  display: none !important;
+}
+
+.date-slabs .date-picker-input {
+  height: 38px !important;
+}
+
+.toem-single-date-picker .dialog-footer {
+  display: none;
+}
+
+.toem-date-picker .date:focus::after,
+.toem-date-picker .date.is-focus::after {
+  content: "";
+  margin: -1px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.toem-date-picker .date:focus,
+.toem-date-picker .date.is-focus {
+  background-color: transparent;
+}

@@ -1,0 +1,155 @@
+.badge-container {
+  padding: 3px 10px;
+  color: $white;
+  font-size: small;
+  border-radius: $borderRadius4;
+}
+
+.status-badge {
+  padding: 5px 8px;
+  border-radius: $borderRadius4;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  user-select: none;
+  cursor: pointer;
+  width: -webkit-fill-available;
+  text-align: center;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 10px;
+  }
+}
+
+.status-badge.gray {
+  background: $badge-gray-background;
+  color: $badge-gray;
+}
+
+.status-badge.orange {
+  background: $badge-orange-background;
+  color: $badge-orange;
+}
+
+.status-badge.blue {
+  background: $badge-blue-background;
+  color: $badge-blue;
+}
+
+.status-badge.red {
+  background: $badge-red-background;
+  color: $badge-red;
+}
+
+.status-badge.green {
+  background: $badge-green-background;
+  color: $badge-green;
+}
+
+.status-badge.purple {
+  background: $badge-purple-background;
+  color: $badge-purple;
+}
+
+.status-badge.yellow {
+  background: $badge-yellow-background;
+  color: $badge-yellow;
+}
+
+.status-badge.dark-orange {
+  background: $btn-orange;
+  color: $white;
+}
+
+.status-badge.light-green {
+  background: $badge-light-green-background;
+  color: $badge-light-green;
+}
+
+.toem-dealer-request {
+  .status-badge {
+    padding: 5px 10px;
+    width: 125px;
+    display: block;
+
+    svg {
+      float: right;
+      margin-top: 3px;
+    }
+  }
+}
+
+.dropdown-menu.show {
+  min-width: 125px;
+}
+
+.status-badge.gray-dark {
+  background: $badge-gray-background;
+  color: $badge-gray;
+}
+
+.status-badge.orange-dark {
+  background: $bagdge-orange-dark-bg;
+  color: $white;
+}
+
+.status-badge.red-dark {
+  background: $badge-red-dark-bg;
+  color: $white;
+}
+
+.status-badge.green-dark {
+  background: $badge-green-dark-bg;
+  color: $white;
+}
+
+// Order status badges
+.status-badge.pending {
+  background: $badge-pending-background;
+  color: $badge-pending-text;
+}
+
+.status-badge.pending {
+  background: $badge-pending-background;
+  color: $badge-pending-text;
+}
+
+.status-badge.verifying-payment {
+  background: $badge-verifying-payment-background;
+  color: $badge-verifying-payment-text;
+}
+
+.status-badge.awaiting-approval {
+  background: $badge-awaiting-approval-background;
+  color: $badge-awaiting-approval-text;
+}
+
+.status-badge.onhold {
+  background: $badge-onhold-background;
+  color: $badge-onhold-text;
+}
+
+.status-badge.approved {
+  background: $badge-approved-background;
+  color: $badge-approved-text;
+}
+
+.status-badge.shipped {
+  background: $badge-shipped-background;
+  color: $badge-shipped-text;
+}
+
+.status-badge.delivered {
+  background: $badge-delivered-background;
+  color: $badge-delivered-text;
+}
+
+.status-badge.cancelled {
+  background: $badge-cancelled-background;
+  color: $badge-cancelled-text;
+}
+
+.status-badge.order-closed {
+  background: $badge-order-closed-background;
+  color: $badge-order-closed-text;
+}

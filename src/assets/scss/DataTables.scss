@@ -1,0 +1,28 @@
+//Data Table
+.DataTableHeader {
+  border: 1px solid $borderColor;
+  border-radius: 12px;
+
+  .rdt_TableHeadRow {
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  .rdt_TableRow:hover {
+    cursor: pointer;
+  }
+
+  div[role="columnheader"] {
+    color: #000000;
+    font-family: "OpenSansSemiBold";
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &.orderLogs {
+    .rdt_Table {
+      max-height: 70vh;
+    }
+  }
+}

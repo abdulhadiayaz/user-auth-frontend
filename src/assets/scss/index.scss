@@ -1,0 +1,396 @@
+// Imports
+@import "./variables.scss";
+@import "./PageNotFound.scss";
+@import "./Login.scss";
+@import "./Forms.scss";
+@import "./MainLayout.scss";
+@import "./Product.scss";
+@import "./Badge.scss";
+@import "./Filters.scss";
+@import "./Dashboard.scss";
+@import "./Orders.scss";
+@import "./CustomSearchBar.scss";
+@import "./RateCards.scss";
+@import "./DataTables.scss";
+@import "./Notifications.scss";
+@import "./PolicyCards.scss";
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansBolder";
+  src: url("../fonts/OpenSans-ExtraBold.ttf");
+}
+
+body {
+  font-family: "OpenSans" !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.breadcrumb-section {
+  align-items: center;
+  display: flex;
+  padding: 25px 0;
+}
+
+.set-bg-gray {
+  background-color: #f5f5f5;
+}
+
+.breadcrumb__option a {
+  color: #333;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 20px;
+  position: relative;
+
+  &:after {
+    background: #333;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: -12px;
+    top: 13px;
+    width: 10px;
+  }
+}
+
+.table-row-clickable {
+  div[role="row"] {
+    cursor: pointer !important;
+  }
+
+  div[role="cell"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    div {
+      white-space: break-spaces;
+    }
+  }
+
+  div[role="columnheader"] {
+    color: $black;
+    font-family: $semiBoldFont;
+  }
+}
+
+.table-row-not-clickable {
+  div[role="row"] {
+    cursor: default !important;
+  }
+
+  div[role="columnheader"] {
+    color: $black;
+    font-family: $semiBoldFont;
+  }
+
+  div[role="cell"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    div {
+      white-space: break-spaces;
+    }
+  }
+}
+
+.table-overflow {
+  &:first-child {
+    div {
+      overflow: visible;
+    }
+  }
+}
+
+.toem-pricing-table {
+  .rdt_TableBody {
+    div[role="row"] {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: baseline;
+    }
+  }
+}
+
+.toem-add-dealer-modal {
+  .btn-close {
+    border: 1px solid #000;
+    border-radius: 25px;
+  }
+}
+
+.toem-addProduct-section {
+  border: 1px solid $toem-border-grey;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: default;
+}
+
+.toem-mapped-dealer-section {
+  background: none;
+  border: 1px solid $toem-border-grey;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+
+  &.active {
+    background: $toem-green;
+
+    &:hover {
+      background: $toem-green;
+    }
+  }
+
+  &:hover {
+    background: $toem-hover-green;
+  }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: $toem-dropdown-active !important;
+  color: $black !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: $toem-dropdown-active !important;
+  color: $black !important;
+}
+
+.modal-header .btn-close {
+  box-shadow: none !important;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 10px;
+  margin: 0 !important;
+}
+
+.modal-header,
+.modal-footer {
+  border: 0 !important;
+}
+
+.model-content {
+  border-radius: 10px !important;
+}
+
+.word-break-initial {
+  word-break: initial;
+}
+
+.text-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.toem-icon-btn {
+  bottom: 5px;
+
+  &.green {
+    color: $toem-green !important;
+  }
+
+  &.red {
+    color: #ff3c3c;
+  }
+
+  &.Mui-disabled {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.26) !important;
+  }
+}
+
+.custom-table-row {
+  div {
+    align-self: center;
+    font-size: 14px;
+  }
+
+  &.data-row {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+
+    div {
+      word-break: break-word;
+      align-self: center;
+      font-size: 14px;
+    }
+  }
+
+  &.data-row:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
+
+.toem-color-grey {
+  color: $toem-black;
+}
+
+.toem-color-disable {
+  color: $toem-grey;
+}
+
+.toem-whitespace-break-spaces {
+  white-space: break-spaces;
+}
+
+.toem-color-orange {
+  color: $toem-orange;
+}
+
+.toem-color-green {
+  color: $toem-green;
+}
+
+.toem-border-1 {
+  border: 1px solid $toem-border-grey;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.bg-green {
+  background: #d3efe4;
+}
+
+.bg-yellow {
+  background: #f9db9e;
+}
+
+.toem-modal-row {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.toem-font-12 {
+  font-size: 12px;
+}
+
+.toem-yes {
+  padding: 5px 15px;
+  background: $badge-green-background;
+  border-radius: 5px;
+  color: $badge-green;
+}
+
+.toem-no {
+  padding: 5px 15px;
+  background: $toem-black;
+  border-radius: 5px;
+  color: $white;
+  &.grey {
+    color: $toem-grey;
+  }
+}
+
+.toem-small-text {
+  font-size: 16px;
+
+  &.grey {
+    color: $toem-grey;
+  }
+}
+
+.custom-switch {
+  .MuiSwitch-switchBase.Mui-checked {
+    color: $toem-green !important;
+  }
+
+  .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+    background-color: $toem-hover-green !important;
+  }
+}
+
+.toem-section {
+  border: 1px solid $toem-border-grey;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: default;
+}
+
+.toem-green-text {
+  color: $toem-dark-green;
+}
+
+.toem-pointer {
+  cursor: pointer;
+}
+
+.toem-radio {
+  input[type="radio"] {
+    -webkit-appearance: none;
+    width: 13px;
+    height: 13px;
+    border: 1px solid $toem-green;
+    border-radius: 50%;
+    outline: none;
+    display: inline-table;
+  }
+
+  input[type="radio"]:before {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+  }
+
+  input[type="radio"]:checked:before {
+    background: $toem-green;
+  }
+
+  &.disable {
+    color: $toem-radio-disable;
+
+    input[type="radio"] {
+      border: 1px solid $toem-radio-disable;
+    }
+
+    input[type="radio"]:checked:before {
+      background: $toem-radio-disable;
+    }
+  }
+}
+.toem-select-all {
+  font-size: 12px;
+  margin-right: 15px;
+  padding-top: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &.blue {
+    color: $toem-blue;
+  }
+}
+
+.toem-border-left {
+  border-left: 1px solid $toem-border-grey;
+}

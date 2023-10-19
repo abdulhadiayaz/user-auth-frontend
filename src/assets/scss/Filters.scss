@@ -1,0 +1,89 @@
+.filter-button {
+  width: 120px;
+  height: 40px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid $black;
+}
+
+.toem_filter_provinces {
+  label {
+    display: block;
+    font-size: 18px;
+
+    input {
+      width: 30px;
+      padding: 5px;
+    }
+  }
+}
+
+.toem-filter {
+  width: 330px !important;
+
+  .btn-close {
+    border: 1px solid #000;
+    font-size: 14px;
+    opacity: 1;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 35px;
+    height: 35px;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-filter {
+  background-color: $white;
+  color: $toem-red;
+  border: 1px solid $toem-red;
+}
+
+.toem-offcanvas-body-filters {
+  position: relative;
+
+  .toem-offcanvas-bottom-margin {
+    margin-bottom: 30vh;
+  }
+
+  .toem-offcanvas-footer {
+    position: fixed;
+    bottom: 0;
+    background: $white;
+  }
+}
+
+.toem-filter-tab-col {
+  display: contents;
+
+  .tab-div {
+    margin-right: 5px;
+
+    .toem-filter-tab-element {
+      background-color: #e5e5e5;
+      padding: 2px 15px;
+      border-radius: 15px;
+      font-size: 12px;
+      cursor: pointer;
+      position: relative;
+      user-select: none;
+
+      input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        background-color: $toem-green;
+        color: white;
+      }
+
+      &.active {
+        background-color: $toem-green;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.policy-card-add-screen {
+  .toem-policy-h6 {
+    font-size: 14px;
+    font-family: $boldFont;
+    margin-bottom: 0px;
+
+    &.green {
+      color: $toem-dark-green;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  }
+
+  .toem-wizard {
+    margin-bottom: 15px;
+
+    .toem-wizard-steps-div {
+      cursor: pointer;
+      border-radius: 8px;
+      overflow: hidden;
+
+      .step-number {
+        width: 50px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $toem-black;
+        border-radius: 8px;
+        font-size: 20px;
+        font-family: $boldFont;
+        color: $toem-black;
+        margin-right: 10px;
+      }
+
+      .step-title {
+        font-size: 14px;
+        font-family: $boldFont;
+        margin-bottom: 0px;
+      }
+
+      .step-icon {
+        font-size: 18px;
+        color: $toem-grey;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      &.active {
+        background: $toem-hover-green;
+
+        .step-number {
+          border: 2px solid transparent;
+        }
+      }
+
+      &.filled {
+        .step-number {
+          border: 2px solid $toem-dark-green;
+          color: $white;
+          background: $toem-dark-green;
+        }
+
+        .step-title {
+          color: $toem-dark-green;
+        }
+      }
+    }
+  }
+
+  .toem-next-btn {
+    width: 150px;
+    height: 50px;
+  }
+  .toem-back-btn {
+    text-decoration: underline;
+    font-family: $boldFont;
+  }
+}

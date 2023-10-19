@@ -1,0 +1,17 @@
+.page-not-found-container {
+  width: 100vw;
+  height: 100%;
+
+  .page-not-found-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+    text-align: -webkit-center;
+    font-family: $fontFamily;
+  }
+
+  .error-404 {
+    object-fit: cover;
+    width: 60%;
+  }
+}

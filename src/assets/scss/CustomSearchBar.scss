@@ -1,0 +1,32 @@
+.package-variants {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  position: absolute;
+  width: 100%;
+  margin-top: 5px;
+  z-index: 2;
+  max-height: 250px;
+  overflow: scroll;
+
+  .package-variants-dropdown {
+    padding: 15px;
+    cursor: pointer;
+    user-select: none;
+
+    &.color-grey {
+      color: rgb(130, 130, 130);
+      font-size: 14px;
+    }
+
+    &:hover {
+      background-color: #f4f8ff;
+    }
+  }
+}
+
+.package-price {
+  .validation-error-alert {
+    line-height: 15px !important;
+  }
+}

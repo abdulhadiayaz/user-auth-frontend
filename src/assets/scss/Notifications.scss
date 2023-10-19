@@ -1,0 +1,13 @@
+.toem-notification-tab {
+  a {
+    color: $toem-notification-grey !important;
+    &.active {
+      color: $toem-dark-green !important;
+      background-color: $toem-light-green !important;
+    }
+  }
+}
+.toem-notification-hr {
+  color: $toem-notification-grey;
+  margin: 0px;
+}

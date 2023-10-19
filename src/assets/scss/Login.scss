@@ -1,0 +1,103 @@
+.signin-col-l {
+  padding: 40px 60px 60px 60px !important;
+  img {
+    width: 150px;
+  }
+  .login-text {
+    color: $toem-black;
+
+    .toem-heading-1 {
+      font-family: $bolderFont;
+      font-size: 50px;
+    }
+    .toem-signin-text {
+      font-size: 32px;
+      letter-spacing: 1px;
+      font-family: $semiBoldFont;
+    }
+  }
+  .form-control {
+    line-height: 30px;
+    border-color: $toem-grey;
+  }
+  .form-label {
+    color: $toem-grey;
+  }
+  .toem-login-link-hover {
+    color: $toem-grey;
+    text-decoration: none;
+    margin-top: -10px;
+
+    &:hover {
+      color: $toem-black;
+    }
+  }
+
+  .toem-signin-button {
+    background-color: $toem-black;
+    color: $white;
+    padding: 8px 25px;
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: $borderRadius12;
+    height: 50px;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+      opacity: 0.9;
+
+      &:before {
+        width: 100%;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .send-code-button {
+    width: -webkit-fill-available;
+    display: inherit;
+  }
+
+  .back-button {
+    background-color: $white;
+    border: 1px solid $toem-black;
+    color: $toem-black;
+    font-family: $semiBoldFont;
+    width: -webkit-fill-available;
+    display: inherit;
+  }
+}
+
+.signin-col-r {
+  height: 100vh;
+  background-image: url("../images/loginBackground.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  color: $white;
+  position: relative;
+
+  .signin-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $black;
+    opacity: 0.4;
+  }
+}
